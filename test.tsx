@@ -1,7 +1,8 @@
-import React from 'react';
-import chalk from 'chalk';
 import test from 'ava';
+import chalk from 'chalk';
 import { render } from 'ink-testing-library';
+import React from 'react';
+
 import App from './src/app.js';
 
 test('greet unknown user', (t) => {

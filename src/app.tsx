@@ -1,9 +1,9 @@
-import React from 'react';
 import { Text } from 'ink';
+import React from 'react';
 
-type Props = {
+interface Props {
   name: string | undefined;
-};
+}
 
 export default function App({ name = 'Stranger' }: Props) {
   return (
