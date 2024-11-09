@@ -1,4 +1,3 @@
-// @ts-check
 import eslint from '@eslint/js';
 import eslintPluginJsonc from 'eslint-plugin-jsonc';
 import eslintPluginReact from 'eslint-plugin-react';
@@ -33,10 +32,10 @@ export default [
       'jsonc/no-comments': 'error',
       'jsonc/sort-keys': 'error',
     },
-    ignores: ['**/node_modules/', '.git/', 'package.json', 'package-lock.json'],
+    ignores: ['package.json', 'package-lock.json'],
   },
   {
-    files: ['**/*.{js,jsx,mjs,cjs,ts,tsx}'],
+    files: ['src/**/*.{js,jsx,mjs,cjs,ts,tsx}'],
     plugins: {
       react: eslintPluginReact,
     },

@@ -9,7 +9,7 @@
   },
   "scripts": {
     "start": "npm run build && node dist/cli",
-    "lint": "eslint \"**/*.{ts,tsx,js,jsx,mjs,cjs,json}\" --fix",
+    "lint": "eslint \"src/**/*.{ts,tsx,json}\" \"eslint.config.mjs\" \"tsconfig.json\" --fix",
     "format": "prettier --write \"**/*.{ts,tsx,js,jsx,mjs,cjs,json}\"",
     "chores": "npm run lint && npm run format",
     "test": "ava",
